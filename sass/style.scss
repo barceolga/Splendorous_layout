@@ -1,0 +1,119 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+
+@mixin clearfix {
+	&:after {
+		content:"";
+		display: table;
+		clear: both;
+	}
+}
+
+
+$main_font: 'PT Serif', serif;
+$project-violet: #7e5c88;
+
+$phone_portrait: "(max-width: 767px) and (orientation:portrait)";
+$phone_landscape: "(max-width: 767px) and (orientation:landscape)";
+$tablet: "(min-width: 768px) and (max-width: 1191px)";
+$desktop: "(min-width: 1200px) and (max-width: 1919px)";
+$desktop_large: "(min-width: 1920px)";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+  margin: 0;
+}
+
+body {
+  .header {
+    width: 100%;
+    height: 101px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    @include clearfix;
+    .header_top-border {
+      width: 100%;
+      height: 5px;
+      background-color: $project-violet;
+    }
+    nav {
+      width: 100%;
+      height: 96px;
+      .row {
+        width: 100%;
+        display: flex;
+        @include clearfix;
+          .logo {
+            height: 96px;
+            display: flex;
+            flex-direction: column;
+            h2 {
+              font-family: $main_font;
+              color: $project-violet;
+              font-size: 32px;
+              text-align: left;
+              margin: 21px auto 13px 20px;
+            }
+            h4 {
+              font-family: $main_font;
+              color: #979797;
+              font-size: 13px;
+              text-align: left;
+              margin: 0 auto 0 20px;
+            }
+          }
+          .navigation {
+            display: flex;
+            justify-content: flex-end;
+            ul {
+              display: flex;
+              justify-content: space-around;
+              list-style-type: none;
+              margin: 0;
+              li {
+                height: 96px;
+                width: auto;
+                a {
+                  display: block;
+                  margin: 38px 20px auto 20px;
+                  text-decoration: none;
+                  color: #979797;
+                  text-transform: uppercase;
+                  font-family: $main_font;
+                  font-size: 13px;
+                  &:hover {
+                    color: #ffffff;
+                  }
+                }
+                &:hover {
+                  background-color: $project-violet;
+                }
+              }
+            }
+          }
+      }
+    }
+  }
+  @media #{$desktop} {
+  		/* For desktop: */
+  	 	.col-lg-1 {width: 8.33%;}
+  		.col-lg-2 {width: 16.66%;}
+  		.col-lg-3 {width: 25%;}
+  		.col-lg-4 {width: 33.33%;}
+  		.col-lg-5 {width: 41.66%;}
+  		.col-lg-6 {width: 50%;}
+  		.col-lg-7 {width: 58.33%;}
+  		.col-lg-8 {width: 66.66%;}
+  		.col-lg-9 {width: 75%;}
+  		.col-lg-10 {width: 83.33%;}
+  		.col-lg-11 {width: 91.66%;}
+  		.col-lg-12 {width: 100%;}
+  }
+}
