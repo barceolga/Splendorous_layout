@@ -260,7 +260,11 @@ body {
 						height: 40px;
 						width: 225px;
 						background-color: #eeeeee;
+						display: flex;
+						justify-content: center;
+						align-items: center;
 						p {
+							margin: 0 auto;
 							font-family: $main_font;
 							font-size: 12px;
 							font-weight: 200;
@@ -299,7 +303,11 @@ body {
 						height: 40px;
 						width: 225px;
 						background-color: $project-violet;
+						display: flex;
+						justify-content: center;
+						align-items: center;
 						p {
+							margin: 0 auto;
 							font-family: $main_font;
 							font-size: 12px;
 							font-weight: 200;

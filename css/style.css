@@ -320,9 +320,16 @@ body .latest_works .latest_works-projects div .latest_works-project .latest_work
   height: 40px;
   width: 225px;
   background-color: #eeeeee;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 body .latest_works .latest_works-projects div .latest_works-project .latest_works-project-description p {
+  margin: 0 auto;
   font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 200;
@@ -365,9 +372,16 @@ body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-proje
   height: 40px;
   width: 225px;
   background-color: #7e5c88;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-description p {
+  margin: 0 auto;
   font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 200;
