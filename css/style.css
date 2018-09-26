@@ -88,7 +88,7 @@ body .header nav .row .logo h2 {
   margin: 21px auto 13px 20px;
 }
 
-body .header nav .row .logo h4 {
+body .header nav .row .logo h5 {
   font-family: "PT Serif", serif;
   color: #979797;
   font-size: 13px;
@@ -137,19 +137,24 @@ body .header nav .row .navigation ul li:hover {
 
 body .slider {
   width: 1000px;
-  height: 505px;
+  height: 540px;
+  overflow: hidden;
 }
 
-body .slider .slider_carousel {
+body .slider .container {
+  width: 1000px;
+}
+
+body .slider .container .slider_carousel {
   margin: 0 auto;
-  width: 1000;
+  width: 1000px;
   height: auto;
   border: none;
   overflow: hidden;
   position: relative;
 }
 
-body .slider .slider_carousel .slider_carousel-list {
+body .slider .container .slider_carousel .slider_carousel-list {
   width: 3000px;
   height: auto;
   list-style-type: none;
@@ -159,36 +164,36 @@ body .slider .slider_carousel .slider_carousel-list {
   z-index: 0;
 }
 
-body .slider .slider_carousel .slider_carousel-list li {
+body .slider .container .slider_carousel .slider_carousel-list li {
   width: 1000px;
   height: auto;
   list-style: none;
   float: left;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row {
+body .slider .container .slider_carousel .slider_carousel-list li .row {
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-description {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description {
   margin: 55px 75px auto 83px;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-description h1 {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description h1 {
   margin-top: 50px;
   margin-bottom: 0;
   line-height: 40px;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-description p {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description p {
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 15px;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-description button {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description button {
   width: 142px;
   height: 35px;
   font-size: 13px;
@@ -199,20 +204,21 @@ body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-des
   background-color: #7e5c88;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-description button span {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description button span {
   font-size: 9px;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-image {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-image {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: start;
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
+  margin-right: 50px;
 }
 
-body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-image img {
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-image img {
   margin-top: 55px;
   border: 25px solid #7e5c88;
   width: 430px;
@@ -220,7 +226,7 @@ body .slider .slider_carousel .slider_carousel-list li .row .slider_carousel-ima
   border-radius: 100%;
 }
 
-body .slider .slider_carousel .slider_arrows {
+body .slider .container .slider_carousel .slider_arrows {
   width: 1000px;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +235,144 @@ body .slider .slider_carousel .slider_arrows {
   position: absolute;
   top: 252px;
   z-index: 2;
+}
+
+body .latest_works {
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+}
+
+body .latest_works:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .latest_works .rectangle {
+  width: 1000px;
+  height: 2px;
+  background-color: #7e5c88;
+}
+
+body .latest_works .latest_works-title h4 {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  margin-left: 20px;
+  text-transform: capitalize;
+  color: #979797;
+}
+
+body .latest_works .latest_works-projects {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+body .latest_works .latest_works-projects:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project {
+  height: 305px;
+  width: 225px;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project div.latest_works-project-title {
+  height: 40px;
+  width: 225px;
+  background-color: #eeeeee;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project div.latest_works-project-title h5 {
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #979797;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project .latest_works-project-image {
+  height: 225px;
+  width: 225px;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project .latest_works-project-image img {
+  height: 225px;
+  width: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project .latest_works-project-description {
+  height: 40px;
+  width: 225px;
+  background-color: #eeeeee;
+}
+
+body .latest_works .latest_works-projects div .latest_works-project .latest_works-project-description p {
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+  color: #979797;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project {
+  height: 305px;
+  width: 225px;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-title {
+  height: 40px;
+  width: 225px;
+  background-color: #7e5c88;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-title h5 {
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-image {
+  height: 225px;
+  width: 225px;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-image img {
+  height: 225px;
+  width: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-description {
+  height: 40px;
+  width: 225px;
+  background-color: #7e5c88;
+}
+
+body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-description p {
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
