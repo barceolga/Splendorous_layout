@@ -202,10 +202,11 @@ body .slider .container .slider_carousel .slider_carousel-list li .row .slider_c
   text-transform: capitalize;
   border-radius: 17px;
   background-color: #7e5c88;
+  border: none;
 }
 
 body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description button span {
-  font-size: 9px;
+  font-size: 8px;
 }
 
 body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-image {
@@ -251,24 +252,32 @@ body .latest_works:after {
 
 body .latest_works .rectangle {
   width: 1000px;
-  height: 2px;
-  background-color: #7e5c88;
+  height: 1px;
+  background-color: #979797;
 }
 
 body .latest_works .latest_works-title h4 {
   font-family: "PT Serif", serif;
   font-size: 16px;
-  margin-left: 20px;
+  margin: 60px auto 0 20px;
   text-transform: capitalize;
   color: #979797;
 }
 
+body .latest_works .underline {
+  width: 960px;
+  height: 1px;
+  background-color: #979797;
+  margin: 9px auto 40px 20px;
+}
+
 body .latest_works .latest_works-projects {
-  width: 100%;
+  width: 975px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: auto auto auto 20px;
   -ms-flex-align: center;
       align-items: center;
 }
@@ -299,7 +308,7 @@ body .latest_works .latest_works-projects div .latest_works-project div.latest_w
 body .latest_works .latest_works-projects div .latest_works-project div.latest_works-project-title h5 {
   font-family: "PT Serif", serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   color: #979797;
 }
@@ -335,6 +344,7 @@ body .latest_works .latest_works-projects div .latest_works-project .latest_work
   font-weight: 200;
   text-align: center;
   color: #979797;
+  text-transform: capitalize;
 }
 
 body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project {
@@ -351,7 +361,7 @@ body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-proje
 body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-title h5 {
   font-family: "PT Serif", serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   color: #fff;
 }
@@ -387,6 +397,7 @@ body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-proje
   font-weight: 200;
   text-align: center;
   color: #fff;
+  text-transform: capitalize;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {

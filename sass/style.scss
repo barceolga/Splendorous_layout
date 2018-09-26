@@ -171,8 +171,9 @@ body {
 									text-transform: capitalize;
 									border-radius: 17px;
 									background-color: $project-violet;
+									border: none;
 									span {
-										font-size: 9px;
+										font-size: 8px;
 									}
 								}
 							}
@@ -210,23 +211,30 @@ body {
 		@include clearfix;
 		.rectangle {
 			width: 1000px;
-			height: 2px;
-			background-color: $project-violet;
+			height: 1px;
+			background-color: $project-grey;
 		}
 		.latest_works-title {
 			h4 {
 				font-family: $main_font;
 				font-size: 16px;
-				margin-left: 20px;
+				margin: 60px auto 0 20px;
 				text-transform: capitalize;
 				color: $project-grey;
 			}
 		}
+		.underline {
+			width: 960px;
+			height: 1px;
+			background-color: $project-grey;
+			margin: 9px auto 40px 20px;
+		}
 		.latest_works-projects {
-			width: 100%;
+			width: 975px;
 			@include clearfix;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
+			margin: auto auto auto 20px;
 			align-items: center;
 			div {
 				.latest_works-project {
@@ -242,7 +250,7 @@ body {
 						h5 {
 							font-family: $main_font;
 							font-size: 12px;
-							font-weight: 700;
+							font-weight: 900;
 							text-align: center;
 							color: $project-grey;
 						}
@@ -270,6 +278,7 @@ body {
 							font-weight: 200;
 							text-align: center;
 							color: $project-grey;
+							text-transform: capitalize;
 						}
 					}
 				}
@@ -285,7 +294,7 @@ body {
 						h5 {
 							font-family: $main_font;
 							font-size: 12px;
-							font-weight: 700;
+							font-weight: 900;
 							text-align: center;
 							color: #fff;
 						}
@@ -313,6 +322,7 @@ body {
 							font-weight: 200;
 							text-align: center;
 							color: #fff;
+							text-transform: capitalize;
 						}
 					}
 				}

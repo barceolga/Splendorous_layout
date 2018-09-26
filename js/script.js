@@ -23,7 +23,7 @@ $(function() {
 
       $listSliderCarousel.animate({
         marginLeft: (currentSlide) * slideWidth * -1
-      }, 1000);
+      }, slideWidth);
 
     } else if  (x > (sliderCarouselLength)) {
       currentSlide = 1;
@@ -34,11 +34,11 @@ $(function() {
 
       $listSliderCarousel.animate({
         marginLeft: (currentSlide) * slideWidth * -1
-      }, 1000);
+      }, slideWidth);
     } else {
       $listSliderCarousel.animate({
         marginLeft: (x) * slideWidth * -1
-      }, 1000);
+      }, slideWidth);
       currentSlide = x;
     }
   }
