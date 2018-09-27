@@ -81,7 +81,7 @@ body {
               text-align: left;
               margin: 21px auto 13px 20px;
             }
-            h5 {
+            h6 {
               font-family: $main_font;
               color: #979797;
               font-size: 13px;
@@ -273,11 +273,8 @@ body {
 						align-items: center;
 						p {
 							margin: 0 auto;
-							font-family: $main_font;
-							font-size: 12px;
 							font-weight: 200;
 							text-align: center;
-							color: $project-grey;
 							text-transform: capitalize;
 						}
 					}
@@ -317,8 +314,6 @@ body {
 						align-items: center;
 						p {
 							margin: 0 auto;
-							font-family: $main_font;
-							font-size: 12px;
 							font-weight: 200;
 							text-align: center;
 							color: #fff;
@@ -329,6 +324,128 @@ body {
 			}
 		}
 	}
+	.content {
+		width: 1000px;
+		height: auto;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		@include clearfix;
+		.content_title {
+			width: 100%;
+			@include clearfix;
+			display: flex;
+			h4 {
+				font-family: $main_font;
+				font-size: 16px;
+				margin: 60px auto 0 20px;
+				text-transform: capitalize;
+				color: $project-grey;
+			}
+			.underline_left {
+				width: 715px;
+				height: 1px;
+				background-color: $project-grey;
+				margin: 9px auto 40px 20px;
+			}
+			.underline_right {
+				width: 225px;
+				@extend .underline_left
+			}
+		}
+		.content_blog {
+			width: 100%;
+			@include clearfix;
+			display: flex;
+			flex-direction: row;
+			margin: auto auto auto 20px;
+			.content_blog-column {
+				img {
+					width: 225px;
+					height: 125px;
+				}
+				h5 {
+					font-family: $main_font;
+					font-size: 12px;
+					font-weight: 800;
+					text-align: left;
+					color: $project-violet;
+					margin: 20px auto 10px 0;
+					text-transform: capitalize;
+				}
+				h6 {
+					font-family: $main_font;
+					font-size: 11px;
+					font-weight: 400;
+					text-align: left;
+					color: $project-grey;
+					margin: 0 auto 10px 0;
+					text-transform: capitalize;
+				}
+				p {
+					font-weight: 400;
+					padding: 0 20px 0 0;
+				}
+			}
+		}
+		.content_about {
+			div {
+				display: flex;
+				direction: row;
+				.content_about-image {
+					width: 70px;
+					height: 70px;
+					border: 1px solid $project-grey;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-right: 8px;
+					img {
+						width: 60px;
+						height: 60px;
+					}
+				}
+				.content_about-description {
+					width: 135px;
+					height: auto;
+					display: flex;
+					flex-direction: column;
+					h6 {
+						margin: 0;
+						font-family: $main_font;
+						font-size: 12px;
+						font-weight: 800;
+						text-align: left;
+						color: $project-grey;
+						text-transform: capitalize;
+					}
+					p {
+						margin: 0;
+						font-weight: 400;
+					}
+					a {
+						margin: 0;
+						font-family: $main_font;
+						font-size: 12px;
+						font-weight: 400;
+						text-align: left;
+						color: $project-violet;
+						text-decoration: none;
+						text-transform: capitalize;
+						span {
+							font-weight: 900;
+						}
+					}
+				}
+		}
+		.underline {
+			width: 100%;
+			height: 1px;
+			background: $project-grey;
+			margin: 16px auto;
+		}
+	}
+}
   @media #{$desktop} {
   		/* For desktop: */
   	 	.col-lg-1 {width: 8.33%;}

@@ -88,7 +88,7 @@ body .header nav .row .logo h2 {
   margin: 21px auto 13px 20px;
 }
 
-body .header nav .row .logo h5 {
+body .header nav .row .logo h6 {
   font-family: "PT Serif", serif;
   color: #979797;
   font-size: 13px;
@@ -339,11 +339,8 @@ body .latest_works .latest_works-projects div .latest_works-project .latest_work
 
 body .latest_works .latest_works-projects div .latest_works-project .latest_works-project-description p {
   margin: 0 auto;
-  font-family: "PT Serif", serif;
-  font-size: 12px;
   font-weight: 200;
   text-align: center;
-  color: #979797;
   text-transform: capitalize;
 }
 
@@ -392,12 +389,172 @@ body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-proje
 
 body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-description p {
   margin: 0 auto;
-  font-family: "PT Serif", serif;
-  font-size: 12px;
   font-weight: 200;
   text-align: center;
   color: #fff;
   text-transform: capitalize;
+}
+
+body .content {
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+body .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .content .content_title {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content .content_title:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .content .content_title h4 {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  margin: 60px auto 0 20px;
+  text-transform: capitalize;
+  color: #979797;
+}
+
+body .content .content_title .underline_left, body .content .content_title .underline_right {
+  width: 715px;
+  height: 1px;
+  background-color: #979797;
+  margin: 9px auto 40px 20px;
+}
+
+body .content .content_title .underline_right {
+  width: 225px;
+}
+
+body .content .content_blog {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin: auto auto auto 20px;
+}
+
+body .content .content_blog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .content .content_blog .content_blog-column img {
+  width: 225px;
+  height: 125px;
+}
+
+body .content .content_blog .content_blog-column h5 {
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: left;
+  color: #7e5c88;
+  margin: 20px auto 10px 0;
+  text-transform: capitalize;
+}
+
+body .content .content_blog .content_blog-column h6 {
+  font-family: "PT Serif", serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  color: #979797;
+  margin: 0 auto 10px 0;
+  text-transform: capitalize;
+}
+
+body .content .content_blog .content_blog-column p {
+  font-weight: 400;
+  padding: 0 20px 0 0;
+}
+
+body .content .content_about div {
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+}
+
+body .content .content_about div .content_about-image {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #979797;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 8px;
+}
+
+body .content .content_about div .content_about-image img {
+  width: 60px;
+  height: 60px;
+}
+
+body .content .content_about div .content_about-description {
+  width: 135px;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+body .content .content_about div .content_about-description h6 {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: left;
+  color: #979797;
+  text-transform: capitalize;
+}
+
+body .content .content_about div .content_about-description p {
+  margin: 0;
+  font-weight: 400;
+}
+
+body .content .content_about div .content_about-description a {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #7e5c88;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+body .content .content_about div .content_about-description a span {
+  font-weight: 900;
+}
+
+body .content .content_about .underline {
+  width: 100%;
+  height: 1px;
+  background: #979797;
+  margin: 16px auto;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
