@@ -17,6 +17,7 @@ body {
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
+  font-family: "PT Serif", serif;
 }
 
 body h1 {
@@ -81,7 +82,6 @@ body .header nav .row .logo {
 }
 
 body .header nav .row .logo h2 {
-  font-family: "PT Serif", serif;
   color: #7e5c88;
   font-size: 32px;
   text-align: left;
@@ -89,7 +89,6 @@ body .header nav .row .logo h2 {
 }
 
 body .header nav .row .logo h6 {
-  font-family: "PT Serif", serif;
   color: #979797;
   font-size: 13px;
   text-align: left;
@@ -123,7 +122,6 @@ body .header nav .row .navigation ul li a {
   text-decoration: none;
   color: #979797;
   text-transform: uppercase;
-  font-family: "PT Serif", serif;
   font-size: 13px;
 }
 
@@ -257,7 +255,6 @@ body .latest_works .rectangle {
 }
 
 body .latest_works .latest_works-title h4 {
-  font-family: "PT Serif", serif;
   font-size: 16px;
   margin: 60px auto 0 20px;
   text-transform: capitalize;
@@ -306,7 +303,6 @@ body .latest_works .latest_works-projects div .latest_works-project div.latest_w
 }
 
 body .latest_works .latest_works-projects div .latest_works-project div.latest_works-project-title h5 {
-  font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 900;
   text-align: center;
@@ -356,7 +352,6 @@ body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-proje
 }
 
 body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-project .latest_works-project-title h5 {
-  font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 900;
   text-align: center;
@@ -396,13 +391,14 @@ body .latest_works .latest_works-projects div:nth-of-type(2) .latest_works-proje
 }
 
 body .content {
-  width: 1000px;
+  width: 975px;
   height: auto;
   overflow: hidden;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  margin-right: 20px;
 }
 
 body .content:after {
@@ -424,7 +420,6 @@ body .content .content_title:after {
 }
 
 body .content .content_title h4 {
-  font-family: "PT Serif", serif;
   font-size: 16px;
   margin: 60px auto 0 20px;
   text-transform: capitalize;
@@ -443,7 +438,7 @@ body .content .content_title .underline_right {
 }
 
 body .content .content_blog {
-  width: 100%;
+  width: 975px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -463,7 +458,6 @@ body .content .content_blog .content_blog-column img {
 }
 
 body .content .content_blog .content_blog-column h5 {
-  font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 800;
   text-align: left;
@@ -473,7 +467,6 @@ body .content .content_blog .content_blog-column h5 {
 }
 
 body .content .content_blog .content_blog-column h6 {
-  font-family: "PT Serif", serif;
   font-size: 11px;
   font-weight: 400;
   text-align: left;
@@ -522,7 +515,6 @@ body .content .content_about div .content_about-description {
 
 body .content .content_about div .content_about-description h6 {
   margin: 0;
-  font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 800;
   text-align: left;
@@ -537,7 +529,6 @@ body .content .content_about div .content_about-description p {
 
 body .content .content_about div .content_about-description a {
   margin: 0;
-  font-family: "PT Serif", serif;
   font-size: 12px;
   font-weight: 400;
   text-align: left;
@@ -555,6 +546,13 @@ body .content .content_about .underline {
   height: 1px;
   background: #979797;
   margin: 16px auto;
+}
+
+body .rectangle {
+  width: 1000px;
+  height: 1px;
+  margin-top: 66px;
+  background-color: #979797;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
