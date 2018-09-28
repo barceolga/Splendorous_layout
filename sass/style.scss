@@ -747,7 +747,7 @@ body {
 				}
 			}
 			.underline {
-				width: 100vw;
+				width: 90vw;
 				margin: 9px auto 40px auto
 			}
 			.latest_works-projects {
@@ -781,9 +781,10 @@ body {
 					.row:first-of-type {
 						h4 {
 							margin: 60px auto 0 auto;
+							text-align: center;
 						}
 						.underline_left {
-							width: 100vw;
+							width: 90vw;
 							height: 1px;
 							background-color: $project-grey;
 							margin: 9px auto 40px auto;
@@ -793,90 +794,55 @@ body {
 						display: flex;
 						flex-direction: column;
 						.content_blog-column {
-							img {
-								width: 225px;
-								height: 125px;
-							}
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
 							h5 {
-								font-size: 12px;
-								font-weight: 800;
-								text-align: left;
-								color: $project-violet;
-								margin: 20px auto 10px 0;
-								text-transform: capitalize;
+								text-align: center;
+								margin: 20px auto 0 auto;
 							}
 							h6 {
-								font-size: 11px;
-								font-weight: 400;
-								text-align: left;
-								color: $project-grey;
-								margin: 0 auto 10px 0;
-								text-transform: capitalize;
+								text-align: center;
+								margin: 0 auto 10px auto;
 							}
 							p {
-								font-weight: 400;
-								padding: 0 20px 0 0;
+								padding: 0 10px;
+								text-align: center;
 							}
 						}
 					}
 				}
 				.content_about {
 					h4 {
-						font-size: 16px;
-						margin: 60px auto 0 auto;
-						text-transform: capitalize;
-						color: $project-grey_dark;
+						text-align: center;
 					}
 					.underline_right {
-						width: 100vw;
+						width: 90vw;
 					}
 					div {
 						display: flex;
 						direction: row;
-						.content_about-image {
-							width: 70px;
-							height: 70px;
-							border: 1px solid $project-grey;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							margin-right: 8px;
-							img {
-								width: 60px;
-								height: 60px;
-							}
-						}
+						justify-content: center;
+						align-items: center;
 						.content_about-description {
-							width: 135px;
-							height: auto;
-							display: flex;
-							flex-direction: column;
+
 							h6 {
-								margin: 0;
-								font-size: 12px;
-								font-weight: 800;
-								text-align: left;
-								color: $project-grey;
-								text-transform: capitalize;
+								text-align: center;
 							}
 							p {
-								margin: 0;
-								font-weight: 400;
+								margin: 0 auto;
+								text-align: center;
 							}
 							a {
-								margin: 0;
-								font-size: 12px;
-								font-weight: 400;
-								text-align: left;
-								color: $project-violet;
-								text-decoration: none;
-								text-transform: capitalize;
-								span {
-									font-weight: 900;
-								}
+								margin: 0 auto;
+								text-align: center;
 							}
 						}
-				}
+					}
+					.underline {
+						width: 80vw;
+					}
 
 			}
 			.underline {
@@ -891,8 +857,80 @@ body {
 		}
 		.elipse {
 			margin: 0 auto;
+			width: 60vw;
 			height: 2px;
 		}
+		.footer {
+			width: 100vw;
+			margin: 0 auto;
+			.footer_content {
+				flex-direction: column;
+				margin: 0 auto;
+				h5 {
+					margin-bottom: 25px;
+					text-align: center;
+				}
+				div.col-xs-12:first-of-type {
+					width: 100vw;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					p {
+						text-align: center;
+						padding-right: 10px;
+						padding-left: 10px;
+					}
+				}
+				div.col-xs-12:nth-of-type(2) {
+					width: 100vw;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.underline {
+						width: 60vw;
+						margin: 10px auto;
+					}
+				}
+				div.col-xs-12:nth-of-type(3) {
+					width: 100vw;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				div.col-xs-12:last-of-type {
+					width: 100vw;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.footer_social-media {
+						width: 50vw;
+						margin-left: 25vw;
+					}
+					.underline {
+						margin: 10px auto;
+						width: 60vw;
+					}
+				}
+			}
+		}
+		.copyrights {
+      width: 100vw;
+			.copyrights_content {
+				flex-direction: column;
+				margin-bottom: 25px;
+				div.col-xs-12:first-of-type {
+					justify-content: center;
+				}
+				div.col-xs-12:last-of-type {
+					justify-content: center;
+				}
+			}
+		}
+
 	}
 
   @media #{$desktop} {
