@@ -52,3 +52,7 @@ $(function() {
       setSlide(currentSlide -1);
    });
 });
+
+$(function(){
+		$('#menu').slicknav();
+	});
