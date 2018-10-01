@@ -207,10 +207,17 @@ body .slider .container .slider_carousel .slider_carousel-list li .row .slider_c
   border-radius: 17px;
   background-color: #7e5c88;
   border: none;
+  cursor: pointer;
+  transition: 1s linear;
 }
 
 body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description button span {
   font-size: 8px;
+}
+
+body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-description button:hover {
+  color: #7e5c88;
+  background-color: #979797;
 }
 
 body .slider .container .slider_carousel .slider_carousel-list li .row .slider_carousel-image {

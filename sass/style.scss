@@ -175,8 +175,14 @@ body {
 									border-radius: 17px;
 									background-color: $project-violet;
 									border: none;
+									cursor: pointer;
+									transition: 1s linear;
 									span {
 										font-size: 8px;
+									}
+									&:hover{
+											color: $project-violet;
+											background-color: $project-grey;
 									}
 								}
 							}
